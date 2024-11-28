@@ -36,16 +36,15 @@ RegisterNumber:  24900224
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 data=pd.read_csv('Employee.csv')
-data.head()
+print(data.head())
 data.info()
-data.isnull().sum()
+print(data.isnull().sum())
 data["left"].value_counts()
 from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
 data["salary"]=le.fit_transform(data["salary"])
 print(data.head())
-x=data[['satisfaction_level','last_evaluation','number_project','average_montly_hours',
-'time_spend_company','Work_accident','left','promotion_last_5years']]
+x=data[['satisfaction_level','last_evaluation','number_project','average_montly_hours','time_spend_company','Work_accident','left','promotion_last_5years']]
 print(x.head())
 y=data[['left']]
 print(y.head())
@@ -63,7 +62,11 @@ dt.predict([[0.5,0.8,9,260,6,0,1,2]])
 
 ## Output:
 
+![Screenshot 2024-11-28 192227](https://github.com/user-attachments/assets/8633a57b-7aaf-40a2-8a56-063d8db8e06a)
+
 ![Screenshot 2024-11-28 170610](https://github.com/user-attachments/assets/79a7ee51-74a3-4d12-8af1-c65db7d84cae)
+
+![Screenshot 2024-11-28 192239](https://github.com/user-attachments/assets/7b4abe61-f336-443a-b868-e02bf5992e77)
 
 ![Screenshot 2024-11-28 170631](https://github.com/user-attachments/assets/326737f0-453f-46b1-a476-5eb54f71f11d)
 
