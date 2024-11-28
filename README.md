@@ -9,13 +9,21 @@ To write a program to implement the Decision Tree Classifier Model for Predictin
 
 ## Algorithm
 1.Load the employee dataset and display basic information, including null values and class distribution of the left column.
+
 2.Encode the categorical salary column using Label Encoding.
+
 3.Define the features (X) and target (y) by selecting relevant columns.
+
 4.Split the data into training and testing sets (80-20 split).
+
 5.Initialize a Decision Tree Classifier with the entropy criterion and train it on the training data.
+
 6.Predict the target values for the test set.
+
 7.Calculate and display the model's accuracy.
+
 8.Compute and display the confusion matrix for the predictions.
+
 9.Predict the left status for a new employee sample.
 
 ## Program:
