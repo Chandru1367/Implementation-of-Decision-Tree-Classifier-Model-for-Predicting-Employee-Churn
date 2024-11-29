@@ -58,6 +58,12 @@ from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 print(accuracy)
 dt.predict([[0.5,0.8,9,260,6,0,1,2]])
+from sklearn.tree import plot_tree
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8,6))
+plot_tree(dt, feature_names=x.columns, class_names=['salary', 'left'], filled=True)
+plt.show()
 ```
 
 ## Output:
@@ -79,6 +85,9 @@ dt.predict([[0.5,0.8,9,260,6,0,1,2]])
 ![Screenshot 2024-11-28 170835](https://github.com/user-attachments/assets/28eaf883-f1e7-43bc-a415-3116ec4b9b71)
 
 ![Screenshot 2024-11-28 170715](https://github.com/user-attachments/assets/d2bbbe51-60fc-4349-89bd-d1defecea96e)
+
+![Screenshot 2024-11-29 090814](https://github.com/user-attachments/assets/c3ad5b0a-cbb0-438f-8855-21f49f2ff08e)
+
 
 ## Result:
 Thus the program to implement the  Decision Tree Classifier Model for Predicting Employee Churn is written and verified using python programming.
